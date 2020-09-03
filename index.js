@@ -29,7 +29,7 @@ myFetch().then((response) => {
   })
   const express = require('express')
   const app = express()
-  const port = 3000
+  const port = process.env.PORT
   
   app.get('/mairies', (req, res) => {
     res.send(mairiesJson)
